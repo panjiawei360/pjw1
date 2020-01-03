@@ -1,54 +1,6 @@
 <!DOCTYPE html>    
 <html>
-    <head>
-    <script type="text/javascript">
-    var a=document.getElenmentById("text").value;                //text为用户名文本框id
-    var b=document.getElenmentById("mm").value;                  //mm为密码框id
-    function loadXMLDoc()
-{
-  var xmlhttp;
-  var i;
-  if(a.length==0)
-  { 
-    document.getElementById("username").innerHTML="<font color='red'>请填写用户名!</font>";
-    return;
-  }
-  if(b.length==0)
-  { 
-    document.getElementById("password").innerHTML="<font color='red'>请填写密码!</font>";
-    return;
-  }
-  if (window.XMLHttpRequest)
-  {
-    // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
-    xmlhttp=new XMLHttpRequest();
-  }
-  else
-  {
-    // IE6, IE5 浏览器执行代码
-    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
-  xmlhttp.onreadystatechange=function(a,b)
-  {
-    if (xmlhttp.readyState==4 && xmlhttp.status==200)
-    {
-      if(a=="aaa"&&y=="123456")
-      window.alert("登录成功！");
-      else if(a=="aaa"&&b!="123456")
-      window.alert("<font color='red'>密码错误！</font>");
-      else if(a!="aaa"&&b=="123456")
-      window.alert("<font color='red'>用户名错误！</font>");
-      else
-      window.alert("<font color='red'>怎么回事啊！小老弟。</font>");
-    }
-  }
-  xmlhttp.open("GET","http://localhost:8081/login",true);
-  xmlhttp.send();
-}
-
-    </script>
-    </head>
-<body style="background-image: url(bgd.png);background-size: cover;">
+<head>
     <meta charst="UTF-8">
     <title>登陆页面</title>
     <style>
@@ -59,17 +11,40 @@
  width:382px;} 
    input{outline: none;}
     </style>
+    <script>
+        function myClick()
+    {
+      var usernamestr=document.getElementById("username").value;
+      var passwordstr=document.getElementById("password").value;
+      if((usernamestr==null || usernamestr=="") || (passwordstr==null || passwordstr==""))
+      alert("用户和密码不能为空！");
+      else
+      {
+      if(usernamestr=="aaa"&&passwordstr=="123456")
+      {
+      alert("登录成功！");
+      window.location.href="http://localhost:8080/a";
+      }
+      else if(usernamestr=="aaa"&&passwordstr!="123456")
+      alert("密码错误！");
+      else if(usernamestr!="aaa"&&passwordstr=="123456")
+      alert("用户名错误！");
+      else
+      alert("怎么回事啊！小老弟。");
+      }
+    }
     
-
-
+    </script>
+</head>
+<body style="background-image: url(bgd.png);background-size: cover;">
     <p style="text-align: center;margin-top: 30%;"><img src="arc.png"></p>
     <div style="text-align: center;background-color: snow;border-radius: 36px;outline: none;width: 723px;height: 911px;margin-left: 121px;margin-top: -2%;">
         <img src="touxiang.png" style="
 margin-left: 0%;
 margin-top: -8%;
 "><br>
-        <input type="text" id="text" name="usename" autofocus="autofocus" required="required" readanly="readanly" style="border-color: rgb(112, 113, 114);width: 75%;height: 11%;border-radius:64px;margin-top: 13%;font-size: 280%;text-align: center;"><br>
-        <input type="password" id="mm" name="password" style="border-color: rgb(112, 113, 114);width: 75%;height: 11%;border-radius:64px;margin-top: 10%;font-size: 280%;text-align: center;color: slategray;"><br>
+        <input type="text" id="username" value="aaa" name="username" autofocus="autofocus" required="required" readanly="readanly" style="border-color: rgb(112, 113, 114);width: 75%;height: 11%;border-radius:64px;margin-top: 13%;font-size: 280%;text-align: center;"><br>
+        <input type="password" id="password" value="123456" name="password" style="border-color: rgb(112, 113, 114);width: 75%;height: 11%;border-radius:64px;margin-top: 10%;font-size: 280%;text-align: center;color: slategray;"><br>
         <br>
         <p style="
 margin-left: -43%;
@@ -82,7 +57,7 @@ margin-left: 38%;
 color: rgb(31, 146, 223);
 font-size: 30px;
 "><a>立即注册</a></p><br>
-        <input type="button" onclick="loadXMLDoc()" value="         登录         " style="
+        <input type="button" onclick="myClick()" value="登录" style="
 margin-top: 1%;
 background-color: snow;
 border-radius: 82px;
@@ -114,7 +89,4 @@ height: 111px;
 margin-left: 16%;
 ">
     </div>
-
-
-
 </body></html>
