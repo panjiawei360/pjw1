@@ -9,8 +9,11 @@
    vertical-align:middle;
    display:inline-block;
    color:white;
-   width:382px;} 
+   width:280px;} 
  input{outline: none;}
+ input[type='password']::-webkit-input-placeholder{
+   color: rgb(180, 180, 180);
+ }
   </style>
   <script type="text/javascript">
   $(function(){
@@ -46,60 +49,55 @@
   </script>
   
 </head>
-<body style="background-image: url(denglu/bgd.png);background-size: cover;">
-<div style="
-  height: 276pt;
-">
-<img style="margin-left: 38%;margin-top: 27.5%;" src="denglu/arc.png">
-</div>
-  <div style="text-align: center;background-color: snow;border-radius: 36px;outline: none;width: 723px;height: 911px;margin-left: 121px;margin-top: -2%;">
-      <img src="denglu/touxiang.png" style="
-margin-left: 0%;
-margin-top: -8%;
-"><br>
-      <input type="text" id="username" name="username" autofocus="autofocus" required="required" readanly="readanly" style="border-color: rgb(112, 113, 114);width: 75%;height: 11%;border-radius:64px;margin-top: 13%;font-size: 280%;text-align: center;"><br>
-      <input type="password" id="password" name="password" style="border-color: rgb(112, 113, 114);width: 75%;height: 11%;border-radius:64px;margin-top: 10%;font-size: 280%;text-align: center;color: slategray;"><br>
-      <br>
-      <p style="
-margin-left: -43%;
-margin-top: 6%;
-color: gray;
-font-size: 30px;
-"><a>忘记密码</a></p> <p style="
-margin-top: -9.7%;
-margin-left: 38%;
-color: rgb(31, 146, 223);
-font-size: 30px;
-"><a>立即注册</a></p><br>
-      <input type="button" id="button" value="登录" style="
-margin-top: 1%;
-background-color: snow;
-border-radius: 82px;
-height: 11%;
-width: 75%;
-border-color: rgb(31, 146, 223);
-font-size: 34px;
-color: rgb(31, 146, 223);
-">
-  </div>
+<body style="background-image: url(denglu/bgd.png);background-size: 122%;">
   <div style="
-margin-top: 16%;
-">
- <span style="font-size: 196%;color: white;/* margin-top: 30px; */"><hr class="a" color="#FFFFFF">&nbsp; 第三方登陆&nbsp; <hr class="a" color="#FFFFFF"></span>
-  <br>
-  <img src="denglu/wx.png" style="
-margin-left: 16%;
-margin-top: 9%;
-height: 111px;
-">
-  <img src="denglu/wb.png" style="
-height: 111px;
-margin-left: 16%;
-">
-  <img src="denglu/qq.png" style="
-height: 111px;
-margin-left: 16%;
-">
-</div>
-
-</body></html>
+    height: 276pt;
+  ">
+  <img style="margin-left: 38%;margin-top: 27.5%;" src="denglu/arc.png">
+  </div>
+    <div style="text-align: center;background-color: snow;border-radius: 20px;outline: none;width: 723px;height: 911px;margin-left: 121px;margin-top: -2%;">
+        <img src="denglu/touxiang.png" style="
+  margin-left: 0%;
+  margin-top: -8%;
+  "><br>
+        <input type="text" id="username" name="username" placeholder="请输入用户名" autofocus="autofocus" required="required" readanly="readanly" style="border-color: rgb(112, 113, 114);width: 75%;height: 11%;border-radius:64px;margin-top: 13%;font-size: 240%;text-align: center;"><br>
+        <input type="password" id="password" name="password" placeholder="请输入密码" style="border-color: rgb(190, 190, 190);width: 75%;height: 11%;border-radius:64px;margin-top: 10%;font-size: 240%;text-align: center;"><br>
+        <br>
+        <p style="
+  margin-left: -58%;
+  margin-top: 6%;
+  color: rgb(160,160,160);
+  font-size: 30px;
+  "><a>忘记密码</a></p> <p style="
+  margin-top: -9.7%;
+  margin-left: 57%;
+  color: rgb(31, 146, 223);
+  font-size: 30px;
+  "><a>立即注册</a></p><br>
+        <input type="button" id="button" value="登录" style="
+  margin-top: 1%;
+  background-color: snow;
+  border-radius: 82px;
+  height: 11%;
+  width: 75%;
+  border-color: rgb(31, 146, 223);
+  font-size: 34px;
+  color: rgb(31, 146, 223);
+  ">
+    </div>
+    <div style="
+  margin-top: 16%;
+  ">
+  <div style="
+      align-content: center;
+      margin-left: 11.5%;
+  ">
+  <hr class="a" color="#FFFFFF"> <p style="color: white;display: inline;font-size: 195%;">  第三方登陆  </p> <hr class="a" color="#FFFFFF">
+  </div>
+  <div>
+    <img src="denglu/wx.png" style="margin-left: 17.5%;margin-top: 9%;height: 126px;">
+    <img src="denglu/wb.png" style="height: 126px;margin-left: 12%;">
+    <img src="denglu/qq.png" style="height: 126px;margin-left: 12%;">
+  </div>
+  
+  </div></body>
