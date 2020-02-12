@@ -1,4 +1,4 @@
-<!DOCTYPE html>    
+<!DOCTYPE html>
 <html><head>
     <meta charst="UTF-8">
     <title>上传</title>
@@ -7,6 +7,26 @@
     .fix{position: fixed;
          bottom: 0pt;
          height: 45pt;}
+    input[type='text']::-webkit-input-placeholder{
+    color: rgb(34, 34, 34);font-size:26pt;
+    }
+    input[type='select']::-webkit-input-placeholder{
+    color: rgb(34, 34, 34);font-size:26pt;
+    }
+    input[type='textarea']::-webkit-input-placeholder{
+    color: rgb(34, 34, 34);font-size:26pt;
+    }
+    .th1
+    {
+        color: rgb(102, 102,102);border-style: none;font-size: 26.5pt;font-weight: 300;text-align: left;width:170pt;
+    }
+    .th2
+    {
+        color: rgb(34,34,34);border-style: none none solid;border-width:1pt;text-align: left;font-weight: 300;border-color:rgb(225,225,225);
+    }
+    select{
+        width:406pt;height: 30pt;font-size: 26pt;
+    }
     </style>
 </head>
 <body style="background-color: rgb(234, 241,254);outline: none;">
@@ -15,47 +35,80 @@
         <p style="font-size: 292%;text-align: center;color: rgb(248, 251, 255);display: inline;margin-left: 34%;position: relative;top: -4%;">上传</p>
     </div>
     
-    <div style="background-color: rgb(255, 255, 255);width: 913px;height: 1357px;margin-left: 2.6%;margin-top: -9%;">
+    <div style="background-color: rgb(255, 255, 255);width: 913px;height: 1371px;margin-left: 2.6%;margin-top: -9%;">
         
+        <div style="height: 253pt;">
+        <img src="shangchuan/touxiang4_03.png" style="display: inline;margin-left: 4.5%;height: 72%;margin-top: 5.4%;">
+        <img src="shangchuan/touxiang4_05.png" style="display: inline;margin-left: 4%;height: 72%;"><br>
+        </div>
         <div style="
-    height: 565pt;
+    height: 742pt;
 ">
-        <img src="shangchuan/touxiang4_03.png" style="height: 180pt;display: inline;margin-top: 5.1%;margin-left: 4.5%;">
-        <img src="shangchuan/touxiang4_05.png" style="height: 180pt;display: inline;margin-left: 4.3%;"><br>
-        <p style="font-size: 220%;color: rgb(102, 102, 102);display: inline;margin-left: 6%;position: relative;top: 58pt;">标题</p>
-        <p style="font-size: 220%;color: rgb(34, 34, 34);display: inline;margin-left: 17%;position: relative;top: 58pt;">论坛APP界面设计</p><br style="">
-        <hr style="width: 388pt;size: 2pt;color: rgb(225, 225, 225);margin-left: 31.5%;position: relative;top: 76pt;"><br>
-        <p style="font-size: 220%;color: rgb(102, 102, 102);display: inline;margin-top: 58%;margin-left: 6%;position: relative;top: 95pt;">姓名</p>
-        <p style="font-size: 220%;color: rgb(34, 34, 34);display: inline;margin-left: 17%;position: relative;top: 95pt;">LYY</p><br>
-        <hr style="width: 388pt;size: 2pt;color: rgb(225, 225, 225);position: relative;top: 112pt;margin-left: 31.5%;"><br>
-        <p style="font-size: 220%;color: rgb(102, 102, 102);display: inline;margin-left: 6%;position: relative;top: 128pt;">范围</p>
-        <p style="font-size: 220%;color: rgb(34, 34, 34);display: inline;margin-left: 17%;position: relative;top: 128pt;">移动端界面设计</p><br>
-        <hr style="width: 388pt;size: 2pt;color: rgb(225, 225, 225);margin-left: 31.5%;position: relative;top: 148pt;"><br>
+        <table style="
+    height: 700pt;
+    width: 589pt;
+    margin-left: 6%;
+    margin-top: 0%;
+">
+            <tbody><tr style="height: 95pt;">
+                <th class="th1">标题</th>
+                <th class="th2" style=""><input type="text" style="border-style: none;height: 50pt;outline: none;width: 415pt;font-size: 26pt;padding-top: 7pt;" placeholder="论坛APP界面设计"></th>
+            </tr>
+            <tr style="
+    height: 98pt;
+">
+                <th class="th1">姓名</th>
+                <th class="th2"><input type="text" style="border-style: none;outline: none;height: 50pt;width: 415pt;font-size: 26pt;padding-top: 11pt;" placeholder="LYY"></th>
+            </tr>
+            <tr style="
+    height: 98pt;
+">
+                <th class="th1">范围</th>
+                <th class="th2"><input type="text" style="border-style: none;outline: none;height: 50pt;width: 415pt;font-size: 26pt;padding-top: 12pt;" placeholder="移动端界面设计"></th>
+            </tr>
+            <tr style="
+    height: 143pt;
+">
+                <th class="th1" style="position: relative;top: -17pt;">注释</th>
+                <th class="th2"><textarea style="border-style: none;outline: none;height: 85pt;width: 415pt;font-size: 26pt;line-height: 1.6;font-weight: bold;" placeholder="该款界面简洁明了，充分了解用户需求后而开发的界面
+"></textarea></th>
+            </tr>
+            <tr style="
+    height: 98pt;
+">
+                <th class="th1">分类</th>
+                <th class="th2"><select style="display: inline;border-style: none;outline: none;position: relative;top: 17pt;"><option value="效率性应用">效率性应用</option><option value="非效率性应用">非效率性应用</option></select><img src="shangchuan/xuanze_03.png" style="
+    position: relative;
+    left: 378pt;
+    height: 24pt;
+    top: -11pt;
+"></th>
+            </tr>
+            <tr style="
+    height: 98pt;
+">
+                <th class="th1">下载</th>
+                <th class="th2"><select style="display: inline;border-style: none;outline: none;position: relative;top: 16pt;"><option value="允许下载" style="
+">允许下载</option><option value="禁止下载" style="
+">禁止下载</option></select><img src="shangchuan/xuanze_03.png" style="
+    position: relative;
+    left: 378pt;
+    height: 24pt;
+    top: -11pt;
+"></th>
+            </tr>
+            <tr style="
+    height: 98pt;
+">
+                <th class="th1">授权</th>
+                <th class="th2"><input type="text" style="border-style: none;height: 50pt;width: 415pt;outline: none;font-size: 26pt;padding-top: 4pt;" placeholder="禁止商业使用"></th>
+            </tr>
+        </tbody></table>    
         </div>
-        <div style="float: left;margin-left: 6%;width: 170pt;height: 150pt;margin-top: 0%;">
-        <p style="font-size: 220%;color: rgb(102, 102, 102);">注释</p>
-        </div>
-        <div style="float: left;width: 447pt;height: 150pt;">
-        <span style="font-size: 220%;color: rgb(34, 34, 34);white-space: pre;line-height: 61px;">该款界面简洁明了，充分了解用户
-需求后而开发的界面</span><br>
-        <hr style="width: 388pt;size: 2pt;color: rgb(225, 225, 225);margin-left: 1%;position: relative;top: 13pt;"><br>
-        </div><br>
-        <div>
-        <p style="font-size: 220%;color: rgb(102, 102, 102);display: inline;margin-left: 5.6%;position: relative;top: 2pt;">分类</p>
-        <p style="font-size: 220%;color: rgb(34, 34, 34);display: inline;margin-left: 17%;position: relative;top: 2pt;">效率性应用</p>
-        <img src="shangchuan/xuanze_03.png" style="height: 22pt;display: inline;position: relative;top: 2pt;margin-left: 33%;"><br>
-        <hr style="width: 388pt;size: 2pt;color: rgb(225, 225, 225);margin-left: 31.5%;position: relative;top: 17pt;"><br>
-        <p style="font-size: 220%;color: rgb(102, 102, 102);display: inline;margin-left: 5.4%;position: relative;top: 36pt;">下载</p>
-        <p style="font-size: 220%;color: rgb(34, 34, 34);display: inline;margin-left: 17%;position: relative;top: 36pt;">允许下载</p>
-        <img src="shangchuan/xuanze_03.png" style="height: 22pt;display: inline;margin-left: 37%;position: relative;top: 35pt;"><br>
-        <hr style="width: 388pt;size: 2pt;color: rgb(225, 225, 225);position: relative;top: 48pt;margin-left: 31.5%;"><br>
-        <p style="font-size: 220%;color: rgb(102, 102, 102);display: inline;margin-left: 5.7%;position: relative;top: 69pt;">授权</p>
-        <p style="font-size: 220%;color: rgb(34, 34, 34);display: inline;margin-left: 17%;position: relative;top: 69pt;">禁止商业使用</p><br>
-        <hr style="width: 388pt;size: 2pt;color: rgb(225, 225, 225);position: relative;top: 48pt;margin-left: 31.5%;position: relative;top: 90pt;"><br>
-    </div>
     </div>
 
-    <div>
-        <img src="shangchuan/anniu_03.png" style="height: 71pt;margin-left: 1.5%;margin-top: 8%;">
+    <div style="
+">
+        <img src="shangchuan/anniu_03.png" style="height: 71pt;margin-left: 1.5%;margin-top: 7%;">
     </div>
-          </body>
+          </body></html>
